@@ -5,8 +5,16 @@
   <body>
     <script>
       (()=>{
-        let n = prompt("enter a number please")  
-        if(n.isNan())return ();
+        let n = prompt("enter something please")  
+        setTimeout(()=>{
+          alert("looking at crystal ball")
+          setTimeout(()=>{
+            alert("analysing brain waves")
+            setTimeout(()=>{
+            alert(`your are thinking of ${n}!`)
+            },1000)
+          },1000)
+        },1000)
       })()
       
       
