@@ -14,7 +14,6 @@
       function guess(){
         let n = document.getElementById("n").value
         let chatbox = document.getElementById("chatbox")
-        setTimeout(()=>{
           chatbox.innerText="looking at crystal ball"
           setTimeout(()=>{
             chatbox.innerText="analyzing brain waves"
@@ -22,7 +21,6 @@
             chatbox.innerText=`your are thinking of ${n}!`
             },2500)
           },2500)
-        },2500)
       }
       
       
