@@ -3,19 +3,27 @@
       <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    <div style="top:50%;left:50%;transform:translate(-50%,-50%);" >
+      <img src="genie.webp">
+      <div id="chatbox">
+      insert something below
+      <input type="text" id="n"><input type="submit" onclick="guess" value="read my mind">
+      </div>
+    </div>
     <script>
-      (()=>{
-        let n = prompt("enter something please")  
+      function guess()=>{
+        let n = document.getElementById("n").value
+        let chatbox = document.getElementById("chatbox")
         setTimeout(()=>{
-          alert("looking at crystal ball")
+          chatbox.innerText="looking at crystal ball"
           setTimeout(()=>{
-            alert("analysing brain waves")
+            chatbox.innerText="analysing brain waves"
             setTimeout(()=>{
-            alert(`your are thinking of ${n}!`)
+            chatbox.innerText=`your are thinking of ${n}!`
             },1000)
           },1000)
         },1000)
-      })()
+      }
       
       
     </script>
